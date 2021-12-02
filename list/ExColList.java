@@ -2,7 +2,7 @@ package list;
 import java.util.*;
 import java.util.List;
 
-public class ExemploCol {
+public class ExColList {
     public static void main(String[] args) {
 
         List<String> nomes = new ArrayList<>();
