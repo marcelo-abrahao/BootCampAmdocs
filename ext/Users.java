@@ -1,3 +1,4 @@
+package ext;
 public class Users {
     private String nome;
     private int idade;

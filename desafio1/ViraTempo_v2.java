@@ -1,4 +1,4 @@
-package desafios;
+package desafio1;
 
 import java.io.*;
 import java.util.*;
