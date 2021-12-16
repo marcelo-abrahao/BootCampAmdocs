@@ -1,3 +1,5 @@
+package DigitalBank.src;
+
 public abstract class Account implements ITransaction {
 
     private static final int HEADQUARTER = 1;
@@ -6,10 +8,12 @@ public abstract class Account implements ITransaction {
     protected int agency;
     protected int identify;
     protected Double balance = 0.0d;
+    protected Client client;
 
-    public Account() {
+    public Account(Client client) {
         this.agency = Account.HEADQUARTER;
         this.identify = SEQ++;
+        this.client = client;
     } 
 
     public int getAgency() {
@@ -41,6 +45,7 @@ public abstract class Account implements ITransaction {
     }
 
     protected void InfoFunds() {
+        System.out.println(String.format("Client: %S", this.client.getClientName()));
         System.out.println(String.format("Agency: %d", this.agency));
         System.out.println(String.format("Account: %d", this.identify));
         System.out.println(String.format("Amount: %.2f", this.balance));

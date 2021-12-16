@@ -1,3 +1,5 @@
+package DigitalBank.src;
+
 public interface ITransaction {
 
     void deposit(Double value);

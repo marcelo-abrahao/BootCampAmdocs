@@ -1,3 +1,5 @@
+package DigitalBank.src;
+
 public class Client {
 
     public String clientName;

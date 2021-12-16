@@ -1,6 +1,10 @@
-import javax.sql.rowset.spi.SyncResolver;
+package DigitalBank.src;
 
 public class Checking extends Account {
+
+    public Checking(Client client) {
+        super(client);
+    }
 
     @Override
     public void PrintFunds(){
