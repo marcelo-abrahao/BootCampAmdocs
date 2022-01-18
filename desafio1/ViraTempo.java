@@ -7,7 +7,7 @@ public class ViraTempo {
     public static void main(String[] args) throws IOException {
 
         Scanner leitor = new Scanner(System.in);	
-        
+                
             while (leitor.hasNext()){
                 float graus = leitor.nextFloat();
                 if (graus<=360) {
